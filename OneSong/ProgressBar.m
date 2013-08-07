@@ -14,10 +14,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.blueStatusBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        self.blueStatusBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, self.frame.size.height)];
         self.blueStatusBar.backgroundColor = [UIColor colorWithRed:1.0/255.0 green:84.0/255.0 blue:154.0/255.0 alpha:1.0];
         [self addSubview:self.blueStatusBar];
-        self.audioPlayer.delegate = self;
+        //self.audioPlayer.delegate = self;
         self.backgroundColor = [UIColor blackColor];
 
     }
@@ -42,27 +42,32 @@
 
 - (void)timerFired:(NSTimer*)timer
 {
-    NSTimeInterval currentTime = self.audioPlayer.currentTime;
-    NSTimeInterval duration = self.audioPlayer.duration;
-    double timeCompleted = currentTime/duration;
-    double newWidth = 215 * timeCompleted;
+
+    CMTime durationTime= self.audioPlayer.currentItem.asset.duration;
+    float secondsDuration = CMTimeGetSeconds(durationTime);
+    float secondsCurrent = CMTimeGetSeconds(self.audioPlayer.currentTime);
+    
+    double timeCompleted = secondsCurrent/secondsDuration;
+    double newWidth = self.frame.size.width * timeCompleted;
     
     self.blueStatusBar.frame = CGRectMake(self.blueStatusBar.frame.origin.x, self.blueStatusBar.frame.origin.y, floorf(newWidth), self.blueStatusBar.frame.size.height);
-
-    NSLog(@"%f", newWidth);
-    
     
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:self];
-    double ratio = location.x/215.0;
-    NSTimeInterval newTime = self.audioPlayer.duration * ratio;
-    self.audioPlayer.currentTime = newTime;
+    double ratio = location.x/self.frame.size.width;
+    
+    CMTime durationTime= self.audioPlayer.currentItem.asset.duration;
+    float secondsDuration = CMTimeGetSeconds(durationTime);
+    secondsDuration = secondsDuration * ratio;
+    CMTime newTime = CMTimeMakeWithSeconds(secondsDuration, self.audioPlayer.currentTime.timescale);
     self.blueStatusBar.frame = CGRectMake(self.blueStatusBar.frame.origin.x, self.blueStatusBar.frame.origin.y, location.x, self.blueStatusBar.frame.size.height);
     NSLog(@"x: %f", location.x);
-}
+    [self.audioPlayer seekToTime:newTime];
 
+
+}
 @end

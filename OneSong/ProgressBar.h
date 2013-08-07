@@ -11,7 +11,7 @@
 
 @interface ProgressBar : UIView <AVAudioPlayerDelegate>
 
-@property(nonatomic) AVAudioPlayer *audioPlayer;
+@property(nonatomic) AVPlayer *audioPlayer;
 @property (nonatomic, strong) NSTimer* timer;
 @property(nonatomic) UIView           *blueStatusBar;
 

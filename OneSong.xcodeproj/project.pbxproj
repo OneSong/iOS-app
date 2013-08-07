@@ -16,8 +16,8 @@
 		2322741317B0744400105DB5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2322740017B0744400105DB5 /* AFURLConnectionOperation.m */; };
 		2322741517B0744400105DB5 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2322740217B0744400105DB5 /* AFXMLRequestOperation.m */; };
 		2322741717B0744400105DB5 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2322740417B0744400105DB5 /* UIImageView+AFNetworking.m */; };
-		2322741A17B0750D00105DB5 /* Blurred.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2322741917B0750D00105DB5 /* Blurred.mp3 */; };
 		2322741C17B0780200105DB5 /* videoPlayButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2322741B17B0780200105DB5 /* videoPlayButton@2x.png */; };
+		232E1DD317B14DE20063F7DE /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 232E1DD217B14DE20063F7DE /* refresh@2x.png */; };
 		234FE20117B06C4D00B8E7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FE20017B06C4D00B8E7C7 /* Foundation.framework */; };
 		234FE20317B06C4D00B8E7C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FE20217B06C4D00B8E7C7 /* CoreGraphics.framework */; };
 		234FE20517B06C4D00B8E7C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234FE20417B06C4D00B8E7C7 /* UIKit.framework */; };
@@ -34,6 +34,11 @@
 		234FE22D17B06C4D00B8E7C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 234FE22B17B06C4D00B8E7C7 /* InfoPlist.strings */; };
 		234FE22F17B06C4D00B8E7C7 /* OneSongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 234FE22E17B06C4D00B8E7C7 /* OneSongTests.m */; };
 		234FE23917B06CB500B8E7C7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 234FE23817B06CB500B8E7C7 /* background.png */; };
+		239D87AA17B0B2270074B968 /* videoPauseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 239D87A917B0B2270074B968 /* videoPauseButton@2x.png */; };
+		239D87B117B134BD0074B968 /* myriadprosemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239D87AE17B134BD0074B968 /* myriadprosemibold.ttf */; };
+		239D87B217B134BD0074B968 /* myriadproregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239D87AF17B134BD0074B968 /* myriadproregular.ttf */; };
+		239D87B317B134BD0074B968 /* myriadproblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239D87B017B134BD0074B968 /* myriadproblack.ttf */; };
+		239D87B617B1427B0074B968 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 239D87B517B1427B0074B968 /* MBProgressHUD.m */; };
 		23F16A9C17B07FE400309BD4 /* ProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2322741E17B0798900105DB5 /* ProgressBar.m */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +72,10 @@
 		2322740217B0744400105DB5 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = OneSong/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		2322740317B0744400105DB5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "OneSong/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		2322740417B0744400105DB5 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "OneSong/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		2322741917B0750D00105DB5 /* Blurred.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blurred.mp3; sourceTree = "<group>"; };
 		2322741B17B0780200105DB5 /* videoPlayButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPlayButton@2x.png"; sourceTree = "<group>"; };
 		2322741D17B0798900105DB5 /* ProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBar.h; sourceTree = "<group>"; };
 		2322741E17B0798900105DB5 /* ProgressBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBar.m; sourceTree = "<group>"; };
+		232E1DD217B14DE20063F7DE /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 		234FE1FD17B06C4D00B8E7C7 /* OneSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234FE20017B06C4D00B8E7C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		234FE20217B06C4D00B8E7C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +97,12 @@
 		234FE22C17B06C4D00B8E7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		234FE22E17B06C4D00B8E7C7 /* OneSongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneSongTests.m; sourceTree = "<group>"; };
 		234FE23817B06CB500B8E7C7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		239D87A917B0B2270074B968 /* videoPauseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPauseButton@2x.png"; sourceTree = "<group>"; };
+		239D87AE17B134BD0074B968 /* myriadprosemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myriadprosemibold.ttf; sourceTree = "<group>"; };
+		239D87AF17B134BD0074B968 /* myriadproregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myriadproregular.ttf; sourceTree = "<group>"; };
+		239D87B017B134BD0074B968 /* myriadproblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myriadproblack.ttf; sourceTree = "<group>"; };
+		239D87B417B1427B0074B968 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		239D87B517B1427B0074B968 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +189,14 @@
 		234FE20617B06C4D00B8E7C7 /* OneSong */ = {
 			isa = PBXGroup;
 			children = (
+				239D87B417B1427B0074B968 /* MBProgressHUD.h */,
+				239D87B517B1427B0074B968 /* MBProgressHUD.m */,
+				239D87AE17B134BD0074B968 /* myriadprosemibold.ttf */,
+				239D87AF17B134BD0074B968 /* myriadproregular.ttf */,
+				239D87B017B134BD0074B968 /* myriadproblack.ttf */,
 				234FE20F17B06C4D00B8E7C7 /* AppDelegate.h */,
-				234FE23817B06CB500B8E7C7 /* background.png */,
 				234FE21017B06C4D00B8E7C7 /* AppDelegate.m */,
+				234FE23817B06CB500B8E7C7 /* background.png */,
 				234FE21217B06C4D00B8E7C7 /* Main_iPhone.storyboard */,
 				234FE21517B06C4D00B8E7C7 /* Main_iPad.storyboard */,
 				234FE21817B06C4D00B8E7C7 /* ViewController.h */,
@@ -196,8 +212,9 @@
 		234FE20717B06C4D00B8E7C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				232E1DD217B14DE20063F7DE /* refresh@2x.png */,
 				2322741B17B0780200105DB5 /* videoPlayButton@2x.png */,
-				2322741917B0750D00105DB5 /* Blurred.mp3 */,
+				239D87A917B0B2270074B968 /* videoPauseButton@2x.png */,
 				234FE20817B06C4D00B8E7C7 /* OneSong-Info.plist */,
 				234FE20917B06C4D00B8E7C7 /* InfoPlist.strings */,
 				234FE20C17B06C4D00B8E7C7 /* main.m */,
@@ -300,13 +317,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232E1DD317B14DE20063F7DE /* refresh@2x.png in Resources */,
+				239D87B317B134BD0074B968 /* myriadproblack.ttf in Resources */,
 				234FE21717B06C4D00B8E7C7 /* Main_iPad.storyboard in Resources */,
 				234FE23917B06CB500B8E7C7 /* background.png in Resources */,
-				2322741A17B0750D00105DB5 /* Blurred.mp3 in Resources */,
 				234FE21C17B06C4D00B8E7C7 /* Images.xcassets in Resources */,
 				234FE21417B06C4D00B8E7C7 /* Main_iPhone.storyboard in Resources */,
+				239D87AA17B0B2270074B968 /* videoPauseButton@2x.png in Resources */,
 				234FE20B17B06C4D00B8E7C7 /* InfoPlist.strings in Resources */,
 				2322741C17B0780200105DB5 /* videoPlayButton@2x.png in Resources */,
+				239D87B217B134BD0074B968 /* myriadproregular.ttf in Resources */,
+				239D87B117B134BD0074B968 /* myriadprosemibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +359,7 @@
 				234FE21A17B06C4D00B8E7C7 /* ViewController.m in Sources */,
 				234FE21117B06C4D00B8E7C7 /* AppDelegate.m in Sources */,
 				234FE20D17B06C4D00B8E7C7 /* main.m in Sources */,
+				239D87B617B1427B0074B968 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
